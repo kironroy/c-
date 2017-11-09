@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std; 
+
+class Cents {
+private:
+  int c_cents;
+
+public:
+  Cents(int cents) { c_cents = cents; }
+
+  int getCents() const { resturn c_cents; }
+}; 
+
+Cents add(const Cents &c1, const Cents &c2) {
+  return Cents(c1.getCents() + c2.getCents()); 
+
